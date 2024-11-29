@@ -1,0 +1,106 @@
+/* Cabecera */
+.header {
+  background-color: #f1327b; /* Color de fondo */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto para mejorar la legibilidad */
+  border-bottom: 3px solid #81C7E1; /* Borde inferior para darle más definición */
+}
+
+body {
+  background-color: rgba(50, 223, 116, 0.343);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: calc(100vh - 160px); /* Ajuste para cabecera y pie de página */
+  padding: 20px;
+}
+
+/* Caja */
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(45, 184, 226);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: rgb(81, 184, 59);
+  border: 2px solid rgb(101, 59, 184);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: rgb(81, 184, 59);
+  color: white;
+}
+
+/* Contenido dinámico oculto */
+.content.hidden {
+  display: none;
+}
+
+.content {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* Imagen responsiva */
+.responsive-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pie de página */
+.footer {
+  background-color: rgb(146, 52, 33);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.footer-link {
+  color: #81C7E1; /* Color del enlace */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}

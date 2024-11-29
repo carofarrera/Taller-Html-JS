@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <h1>Bienvenido a Mi Presentación</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <!-- Botón dinámico 1 -->
+        <div class="box">
+            <h2>Información Personal</h2>
+            <button class="toggle-button" onclick="toggleContent('info')">Mostrar Información</button>
+            <div id="info" class="content hidden">
+                <ol>
+                    <li>Nombre: Carolina </li>
+                    <li>Apellido: Farrera</li>
+                    <li>Email: caro.fara98@gmail.com</li>
+                    <li>Teléfono: +52 1 55 2737 7556</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Botón dinámico 2 -->
+        <div class="box">
+            <h2>CSS</h2>
+            <button class="toggle-button" onclick="toggleContent('css-info')">¿Qué es CSS?</button>
+            <div id="css-info" class="content hidden">
+                <p>CSS es un lenguaje que describe cómo se deben mostrar los elementos HTML en pantalla, papel u otros medios..</p>
+            </div>
+        </div>
+
+        <!-- Botón dinámico 3 con imagen -->
+        <div class="box">
+            <h2>Mi Imagen</h2>
+            <button class="toggle-button" onclick="toggleContent('image')">Mostrar Imagen</button>
+            <div id="image" class="content hidden">
+                <img src="/CSS/Recursos/Caro.png" alt="Mi Imagen" class="responsive-img">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>© 2024 Jafeth Oswaldo Guerrero Serrano | Todos los derechos reservados.</p>
+       
+    <!-- JavaScript para botones dinámicos -->
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
